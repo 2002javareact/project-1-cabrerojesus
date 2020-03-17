@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.nav{
+  display:flex;
+  margin-left: 45%;
+  
+}
+
+CardDeck{
+    margin: 5%;
+}

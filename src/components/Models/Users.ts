@@ -2,6 +2,9 @@ import { Role } from "./Role"
 
 
 export class Users{
+    map(arg0: (ele: any) => JSX.Element) {
+        throw new Error("Method not implemented.")
+    }
     userId: number // primary key
 	username: string // not null, unique
 	password: string // not null
