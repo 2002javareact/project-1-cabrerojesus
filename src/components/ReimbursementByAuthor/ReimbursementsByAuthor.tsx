@@ -22,7 +22,7 @@ export class ReimbursementByAuthorComponent extends React.Component<IReimburseme
     constructor(props:any){
         super(props)
         this.state =({
-            authorId:0
+            authorId:this.props.currentUser.userId
         })
     }
 

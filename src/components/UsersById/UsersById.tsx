@@ -18,7 +18,7 @@ export class UsersByIdComponent extends React.Component<IUserIdProps,IuserIdStat
    constructor(props:any){
    super(props)
    this.state = ({
-       userId:0
+       userId:this.props.currentUser.userId
    })
 }
     getUserId = async (e: SyntheticEvent) => {
