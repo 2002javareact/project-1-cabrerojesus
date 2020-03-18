@@ -25,7 +25,7 @@ export const updateReimbursementReducer = (state = initialState, action:AnyActio
         case updateReimbursementTypes.INTERNAL_SERVER_ERROR:{
             return {
                 ...state,
-                errorMessage:''
+                errorMessage:'Please provide an existing User Id to update'
             }
         }
         default:

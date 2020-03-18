@@ -24,7 +24,7 @@ export const LoginActionMapper = (username:string, password:string) => async  (d
           }
         })
     }catch(e){
-        if(e.status === 400){
+        if(e.status === 401){
             dispatch({
                 type:loginTypes.INVALID_CREDENTIALS
             })

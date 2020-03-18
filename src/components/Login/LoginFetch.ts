@@ -13,7 +13,7 @@ export async function LoginFetch(username: string, password: string):Promise<Use
 
     try {
         let res = await Project0Client.post("/users/login",credentials)
-        if(res.status === 400){
+        if(res.status === 401){
             throw new BadCredentialsError()
         }        
             return res.data        

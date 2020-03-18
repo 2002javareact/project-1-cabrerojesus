@@ -44,7 +44,7 @@ export class HomepageComponent extends React.Component<IHomepageProps,any>{
                            </>  
                         )
                     }
-                    else{
+                    else if(loggedUser.username !== '' && loggedUser.role.role === 'User'){
                         return(
                             <> 
                               <Container>

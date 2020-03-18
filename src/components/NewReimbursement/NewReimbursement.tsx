@@ -71,7 +71,7 @@ export class NewReimbursementComponent extends React.Component<INewReimbursement
 
     render(){
         return(
-            this.props.currentUser.username === '' || this.props.currentUser.role.roleId > 2?
+            this.props.currentUser.username === ''?
             <Redirect to = '/'/>
             :
             this.props.newReimbursement.description === ''?

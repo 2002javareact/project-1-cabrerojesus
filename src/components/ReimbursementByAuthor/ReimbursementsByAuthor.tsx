@@ -44,7 +44,7 @@ export class ReimbursementByAuthorComponent extends React.Component<IReimburseme
             this.props.currentUser.username === ''?
             <Redirect to = '/'/>
             :
-            this.props.currentUser.role.roleId > 2 && this.props.currentUser.userId !== this.state.authorId?
+            this.props.currentUser.role.roleId <= 2 && this.props.currentUser.userId !== this.state.authorId?
             <Redirect to = '/'/>
             :
              <>

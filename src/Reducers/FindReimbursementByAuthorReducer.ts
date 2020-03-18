@@ -32,7 +32,7 @@ export const findReimbursementByAuthorReducer = (state = initialState, action:An
         case FindByReimbursementAuthorTypes.INTERNAL_SERVER:{
             return {
                 ...state,
-                errorMessage:'Something went wrong. Oops!'
+                errorMessage:'Please provide an existing User Id'
             }
         }
         default:

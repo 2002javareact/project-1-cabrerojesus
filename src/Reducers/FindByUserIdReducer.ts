@@ -37,7 +37,7 @@ export const findByUserIdReducer = (state = initialState, action:AnyAction) => {
         case FindByUserIdTypes.INTERNAL_SERVER:{
             return {
                 ...state,
-                errorMessage:'Something went wrong. Oops!'
+                errorMessage:'Please Provide an existing User Id'
             }
         }
         default:

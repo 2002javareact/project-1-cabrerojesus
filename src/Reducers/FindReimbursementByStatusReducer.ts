@@ -31,7 +31,7 @@ export const findReimbursementByStatusReducer = (state = initialState, action:An
         case FindByReimbursementStatusTypes.INTERNAL_SERVER:{
             return {
                 ...state,
-                errorMessage:'Something went wrong. Oops!'
+                errorMessage:'A status input is 1,2,3'
             }
         }
         default:

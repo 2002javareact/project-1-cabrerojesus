@@ -34,7 +34,7 @@ export const loginReducer = (state = initialState, action:AnyAction) => {
         case loginTypes.INTERNAL_SERVER:{
             return {
                 ...state,
-                errorMessage:'Something went wrong. Oops!'
+                errorMessage:'Please provide a username and a password!'
             }
         }
         default:
